@@ -4,8 +4,11 @@ permissions:
   id-token: write
   contents: read
 
-on:
-  workflow_dispatch:
+on: 
+    push:
+        paths: 
+        - 'ARM/**'
+        - '.github/workflows/infraworkflow.yml'
 
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}      # setthdis to your Azure Subscription Id
