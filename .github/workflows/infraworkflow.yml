@@ -11,7 +11,7 @@ on:
         - '.github/workflows/infraworkflow.yml'
 
 env:
-    AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}      # setthis to your Azure Subscription Id
+    AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}      # setthdis to your Azure Subscription Id
     AZURE_RESOURCEGROUP_NAME: regr2                      # set this to your preferred resource group name
     AZURE_WEBAPP_NAME: demo-webappsql-gh-830523                          # set this to your preferred web app name
     ASP_NAME: demo-webappsql-gh-actions
